@@ -1,0 +1,226 @@
+
+//Insert data the test for drivers
+db.drivers.insertMany([
+    {
+    name: 'Rayhan',
+    lastName: 'John',
+    phone: '1234567899',
+    location: {
+        type: 'Point',
+        coordinates: [18.433495529641057, -69.95085648783302] // Universidad del caribe (UNICARIBE) coordinates
+    },
+    available: true,
+    createdAt: {
+        date:Date()
+    }
+},
+{
+    name: 'Yeison',
+    lastName: 'Dahmer',
+    phone: '809-869-1230',
+    location: {
+        type: 'Point',
+        coordinates: [18.763080479545977, -69.03293127295403] // defensa civil del seibo coordinates
+    },
+    available: true,
+    createdAt: {
+        date:Date()
+    }
+},
+{
+    name: 'Tommy',
+    lastName: 'Lorem',
+    phone: '829-448-6941',
+    location: {
+        type: 'Point',
+        coordinates: [18.758159287377936, -69.03474000780793] // hostipal provincial del seibo Dr. Teofilo hernandez coordinates
+    },
+    available: true,
+    createdAt: {
+        date:Date()
+    }
+},
+{
+    name: 'Bily',
+    lastName: 'Thomson',
+    phone: '809-635-1232',
+    location: {
+        type: 'Point',
+        coordinates: [18.758159287377936, -69.03474000780793] // hostipal provincial del seibo Dr. Teofilo hernandez coordinates
+    },
+    available: false,
+    createdAt: {
+        date:Date()
+    }
+},
+{
+    name: 'Juan',
+    lastName: 'Duarte',
+    phone: '809-775-9612',
+    location: {
+        type: 'Point',
+        coordinates: [18.469945630934415, -69.90883786392143] // museo nacional de historia natural coordinates
+    },
+    available: true,
+    createdAt: {
+        date:Date()
+    }
+},
+{
+    name: 'Francisco',
+    lastName: 'Mella',
+    phone: '829-559-7800',
+    location: {
+        type: 'Point',
+        coordinates: [18.469945630934415, -69.90883786392143] // museo nacional de historia natural coordinates
+    },
+    available: true,
+    createdAt: {
+        date:Date()
+    }
+},
+{
+    name: 'Alberto',
+    lastName: 'Rodriguez',
+    phone: '849-652-0012',
+    location: {
+        type: 'Point',
+        coordinates: [18.450885844908104, -69.953006599597] // DownTown center coordinates
+    },
+    available: true,
+    createdAt: {
+        date:Date()
+    }
+},
+{
+    name: 'Jose',
+    lastName: 'Manuel',
+    phone: '809-223-0056',
+    location: {
+        type: 'Point',
+        coordinates: [18.481919821203444, -69.91267617752453] // Sambil santo domingo coordinates
+    },
+    available: false,
+    createdAt: {
+        date:Date()
+    }
+},
+])
+
+
+
+//insert data the test for pilots
+db.pilots.insertMany([
+    {
+    name: 'Jesus',
+    lastName: 'Alvarez',
+    phone: '849-652-0000',
+    licenseType:"Categoria 01",
+     licenseNumber: "02145",
+    available: true,
+    createdAt: {
+        date:Date(),
+        user: 'admin'
+    }
+},
+{
+     name: "Juan",
+    lastName: "Perez",
+    phone: "849-551-5555",
+    licenseType: "Categoria 01",
+    licenseNumber: "12345",
+    available: true,
+    createdAt: {
+        date: new Date(),
+       
+    }
+},
+{
+    name: "Maria",
+    lastName: "Garcia",
+    phone: "849-505-1565",
+    licenseType: "Categoria 03",
+    licenseNumber: "67890",
+    available: true,
+    createdAt: {
+        date: new Date(),
+       
+    }
+},
+{
+    name: "Rafael",
+    lastName: "Matos",
+    phone: "849-105-9565",
+    licenseType: "Categoria 01",
+    licenseNumber: "17860",
+    available: false,
+    createdAt: {
+        date: new Date(),
+       
+    }
+}
+])
+//db.pilots.find({})
+
+db.passengers.insertMany([
+    {
+    name: "Ana",
+    lastName: "González",
+    gender: "female",
+    phone: "829-555-1294",
+    email: "ana.gonzalez@example.com",
+    paymentMethod: "credit card",
+     currentLocation: {
+        type: 'Point',
+        coordinates: [18.763080479545977, -69.03293127295403] // defensa civil del seibo coordinates
+    }
+    },
+    {
+    name: "Carlos",
+    lastName: "Martínez",
+    gender: "male",
+    phone: "809-269-5678",
+    email: "carlos.martinez@example.com",
+    paymentMethod: "cash",
+     currentLocation: {
+        type: 'Point',
+        coordinates: [18.481919821203444, -69.91267617752453] // Sambil santo domingo coordinates
+    }
+    },
+    {
+    name: "María",
+    lastName: "García",
+    gender: "female",
+    phone: "-849206-9012",
+    email: "maria.garcia@example.com",
+    paymentMethod: "debit card",
+     currentLocation: {
+        type: 'Point',
+        coordinates: [18.469945630934415, -69.90883786392143] // museo nacional de historia natural coordinates
+    }
+},
+{
+    name: "Javier",
+    lastName: "Sánchez",
+    gender: "male",
+    phone: "809-815-3056",
+    email: "javier.sanchez@example.com",
+    paymentMethod: "credit card",
+    currentLocation: {
+        type: 'Point',
+        coordinates: [18.450885844908104, -69.953006599597] // DownTown center coordinates
+    }
+},
+{
+    name: "Lucía",
+    lastName: "Díaz",
+    gender: "other",
+    phone: "829-565-7091",
+    email: "lucia.diaz@example.com",
+    paymentMethod: "cash",
+     currentLocation: {
+        type: 'Point',
+        coordinates: [18.48117072047952, -69.88875206919498] // santo Domingo Parada del seibo  coordinates
+    }
+}
+])
